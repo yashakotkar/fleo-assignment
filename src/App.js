@@ -1,6 +1,5 @@
 import "./App.css";
 import { ThemeProvider } from "@mui/material/styles";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./layout/Layout";
 import HomePage from "./pages/HomePage";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -14,12 +13,8 @@ function App() {
     <ThemeProvider theme={createTheme({ palette: { mode: theme } })}>
       <CssBaseline />
       <div className="App">
-        <Layout theme={theme} setTheme={setTheme} >
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" exact element={<HomePage />} />
-            </Routes>
-          </BrowserRouter>
+        <Layout theme={theme} setTheme={setTheme}>
+          <HomePage />
         </Layout>
       </div>
     </ThemeProvider>
