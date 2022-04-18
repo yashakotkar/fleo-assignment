@@ -39,7 +39,7 @@ const RepoCard = ({
   }));
 
   return (
-    <a target="_blank" href={link}>
+    <a target="_blank" rel="noreferrer" href={link}>
       <StyledCard >
         <CardHeader
           avatar={

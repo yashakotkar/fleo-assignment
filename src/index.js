@@ -5,8 +5,6 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { store } from "./app/store";
 import { Provider } from "react-redux";
-import { ThemeProvider } from "@emotion/react";
-import { createTheme } from "@mui/system";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
